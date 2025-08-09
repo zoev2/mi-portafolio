@@ -1,0 +1,90 @@
+/* --- Estilos generales --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #eaeaea;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Encabezado --- */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1f1f1f;
+    border-bottom: 1px solid #333;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+.subtitulo {
+    color: #a1a1a1;
+    font-size: 1.2rem;
+}
+
+/* --- Secciones --- */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    color: #ffffff;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* --- Tarjetas de proyectos --- */
+.proyectos {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.tarjeta {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta h3 {
+    margin-top: 0;
+}
+
+.tarjeta a {
+    color: #4da3ff;
+    text-decoration: none;
+}
+
+.tarjeta a:hover {
+    text-decoration: underline;
+}
+
+/* --- Contacto --- */
+.contacto a {
+    color: #4da3ff;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1f1f1f;
+    font-size: 0.9rem;
+    color: #777;
+    border-top: 1px solid #333;
+}
