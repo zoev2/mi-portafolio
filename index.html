@@ -1,88 +1,43 @@
-/* Estilos generales */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #121212;
-    color: #e0e0e0;
-    line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tu Nombre</h1>
+        <p>Desarrollador Web | Diseñador Minimalista</p>
+    </header>
 
-/* Encabezado */
-header {
-    text-align: center;
-    padding: 2rem 1rem;
-    background-color: #1f1f1f;
-    border-bottom: 1px solid #333;
-}
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>Soy un apasionado por la tecnología y el diseño web, creando experiencias digitales modernas, minimalistas y funcionales.</p>
+    </section>
 
-header h1 {
-    font-size: 2.5rem;
-    margin: 0;
-}
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyecto">
+            <h3>Proyecto 1</h3>
+            <p>Descripción breve del proyecto.</p>
+            <a href="#">Ver más</a>
+        </div>
+        <div class="proyecto">
+            <h3>Proyecto 2</h3>
+            <p>Descripción breve del proyecto.</p>
+            <a href="#">Ver más</a>
+        </div>
+    </section>
 
-header p {
-    color: #bbbbbb;
-    font-size: 1.1rem;
-}
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Email: <a href="mailto:tuemail@correo.com">tuemail@correo.com</a></p>
+    </section>
 
-/* Secciones */
-section {
-    max-width: 900px;
-    margin: auto;
-    padding: 2rem 1rem;
-}
-
-h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
-    color: #ffffff;
-}
-
-/* Proyectos */
-.proyecto {
-    background-color: #1f1f1f;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.proyecto:hover {
-    transform: translateY(-5px);
-}
-
-.proyecto h3 {
-    margin-top: 0;
-}
-
-.proyecto a {
-    color: #64ffda;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.proyecto a:hover {
-    text-decoration: underline;
-}
-
-/* Contacto */
-#contacto a {
-    color: #64ffda;
-    text-decoration: none;
-}
-
-#contacto a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #1f1f1f;
-    border-top: 1px solid #333;
-    font-size: 0.9rem;
-    color: #888;
-}
+    <footer>
+        <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
