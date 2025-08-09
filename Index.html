@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portafolio — TU_NOMBRE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#">TU_NOMBRE</a>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#awards">Reconocimientos</a></li>
+      </ul>
+    </nav>
+    <div class="hero container">
+      <img src="img/foto.jpg" alt="Mi Foto" class="perfil">
+      <div class="hero-text">
+        <h1>TU_NOMBRE</h1>
+        <p class="role">DESCRIPCION_CORTA — p. ej. Desarrollador web / Diseñador / Estudiante</p>
+        <p class="hero-cta">
+          <a href="#projects" class="btn">Ver proyectos</a>
+          <a href="#contact" class="btn ghost">Contactar</a>
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>Sobre mí</h2>
+      <p>Aquí escribe una breve presentación. ¿Quién eres? ¿Qué te motiva? ¿Qué buscas profesionalmente?</p>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Habilidades</h2>
+      <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Oracle / SQL</span>
+        <span class="skill">Otra habilidad</span>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Proyectos</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Proyecto 1</h3>
+          <p>Descripción corta del proyecto. Tecnologías, rol y enlace si aplica.</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Proyecto 2</h3>
+          <p>Descripción corta del proyecto.</p>
+        </article>
+
+        <!-- Duplica las tarjetas para más proyectos -->
+      </div>
+    </section>
+
+    <section id="awards" class="card">
+      <h2>Reconocimientos</h2>
+      <ul>
+        <li>Reconocimiento 1 — año</li>
+        <li>Reconocimiento 2 — año</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contacto</h2>
+      <p>Correo: <a href="mailto:tu@correo.com">tu@correo.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> TU_NOMBRE — Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Actualiza el año en el footer automáticamente
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
