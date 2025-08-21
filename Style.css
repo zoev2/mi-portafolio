@@ -1,0 +1,125 @@
+/* Reset y básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+header h1 {
+  font-size: 2.2rem;
+}
+
+header p {
+  margin-top: .5rem;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+/* Secciones */
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #333;
+  padding-left: .5rem;
+}
+
+section p {
+  margin-bottom: 1rem;
+}
+
+/* Formularios dinámicos */
+.form-dinamico {
+  display: flex;
+  gap: .5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-dinamico input {
+  padding: .5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.form-dinamico button {
+  padding: .5rem 1rem;
+  border: none;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-dinamico button:hover {
+  background: #555;
+}
+
+/* Listas dinámicas */
+.lista-dinamica {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-dinamica li {
+  background: #fff;
+  padding: .8rem;
+  margin-bottom: .5rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.lista-dinamica li span {
+  flex: 1;
+}
+
+.lista-dinamica button {
+  margin-left: .5rem;
+  padding: .3rem .6rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: .9rem;
+}
+
+.btn-edit {
+  background: #007bff;
+  color: #fff;
+}
+
+.btn-delete {
+  background: #e74c3c;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: #ccc;
+  margin-top: 2rem;
+}

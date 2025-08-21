@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoja de Vida Dinámica - Kevin Arevalo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Kevin Alejandro Arevalo</h1>
+      <p>Estudiante de 6° semestre de Tecnología en Sistemas de Desarrollo en la Universidad Santiago de Cali</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- Texto descriptivo -->
+    <section id="descripcion" class="container">
+      <h2>Sobre mí</h2>
+      <p>Soy estudiante de sexto semestre en Tecnología en Sistemas de Desarrollo, apasionado por el desarrollo de software, con conocimientos en back-end y front-end usando frameworks modernos. Me destaco en la resolución de problemas, la lógica de programación y el trabajo en equipo.</p>
+    </section>
+
+    <!-- Historial Académico -->
+    <section id="academico" class="container">
+      <h2>Historial Académico</h2>
+      <form id="form-academico" class="form-dinamico">
+        <input type="text" id="academico-input" placeholder="Título o estudio">
+        <input type="text" id="academico-fecha" placeholder="Periodo (ej: 2020-2021)">
+        <button type="submit">Agregar</button>
+      </form>
+      <ul id="lista-academico" class="lista-dinamica"></ul>
+    </section>
+
+    <!-- Historial Laboral -->
+    <section id="laboral" class="container">
+      <h2>Historial Laboral</h2>
+      <form id="form-laboral" class="form-dinamico">
+        <input type="text" id="laboral-input" placeholder="Trabajo o cargo">
+        <input type="text" id="laboral-fecha" placeholder="Periodo (ej: 2024)">
+        <button type="submit">Agregar</button>
+      </form>
+      <ul id="lista-laboral" class="lista-dinamica"></ul>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="container">
+      <h2>Habilidades</h2>
+      <form id="form-habilidad" class="form-dinamico">
+        <input type="text" id="habilidad-input" placeholder="Ej: Java, Inglés B1...">
+        <button type="submit">Agregar</button>
+      </form>
+      <ul id="lista-habilidades" class="lista-dinamica"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kevin Arevalo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
