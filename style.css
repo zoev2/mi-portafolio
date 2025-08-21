@@ -123,3 +123,13 @@ footer {
   color: #ccc;
   margin-top: 2rem;
 }
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  margin-bottom: 20px;
+}
+
