@@ -3,67 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hoja de Vida Dinámica - Kevin Arevalo</title>
-  <link rel="stylesheet" href="style.css?v=1.0">
-
+  <title>MindQuest</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-  <div class="container text-center py-5">
-   <img src="img/foto.jpg" alt="Foto de perfil" class="foto-perfil">
 
-    <h1 class="fw-bold">Kevin Alejandro Arevalo</h1>
-    <p>Estudiante de 6° semestre de Tecnología en Sistemas de Desarrollo en la Universidad Santiago de Cali</p>
-  </div>
-  </header>
-
-  <main>
-    <!-- Texto descriptivo -->
-    <section id="descripcion" class="container">
-      <h2>Sobre mí</h2>
-      <p>Soy estudiante de sexto semestre en Tecnología en Sistemas de Desarrollo, apasionado por el desarrollo de software, con conocimientos en back-end y front-end usando frameworks modernos. Me destaco en la resolución de problemas, la lógica de programación y el trabajo en equipo.</p>
-    </section>
-
-    <!-- Historial Académico -->
-    <section id="academico" class="container">
-      <h2>Historial Académico</h2>
-      <form id="form-academico" class="form-dinamico">
-        <input type="text" id="academico-input" placeholder="Título o estudio">
-        <input type="text" id="academico-fecha" placeholder="Periodo (ej: 2020-2021)">
-        <button type="submit">Agregar</button>
+  <!-- Pantalla de Login -->
+  <section id="login" class="page active">
+    <div class="login-container">
+<img src="img/foto.jpg" alt="Logo MindQuest" class="logo">
+      <h1>MindQuest</h1>
+      <form id="loginForm">
+        <input type="email" id="email" placeholder="Correo Electronico" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button type="submit">INICIAR SESIÓN</button>
       </form>
-      <ul id="lista-academico" class="lista-dinamica"></ul>
-    </section>
+      <p>¿No tiene una cuenta registrada? <a href="#">Registrarse</a></p>
+    </div>
+  </section>
 
-    <!-- Historial Laboral -->
-    <section id="laboral" class="container">
-      <h2>Historial Laboral</h2>
-      <form id="form-laboral" class="form-dinamico">
-        <input type="text" id="laboral-input" placeholder="Trabajo o cargo">
-        <input type="text" id="laboral-fecha" placeholder="Periodo (ej: 2024)">
-        <button type="submit">Agregar</button>
-      </form>
-      <ul id="lista-laboral" class="lista-dinamica"></ul>
-    </section>
+  <!-- Calendario -->
+  <section id="calendar" class="page">
+    <div class="calendar-container">
+      <div class="calendar-header">
+        <button class="nav-btn" onclick="prevMonth()">&lt;</button>
+        <h2>AGOSTO</h2>
+        <button class="nav-btn" onclick="nextMonth()">&gt;</button>
+      </div>
+      <table class="calendar">
+        <thead>
+          <tr>
+            <th>DOMINGO</th><th>LUNES</th><th>MARTES</th><th>MIERCOLES</th>
+            <th>JUEVES</th><th>VIERNES</th><th>SABADO</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>3</td><td class="event">!</td><td>5</td><td>6</td><td class="event">!</td><td>8</td><td>9</td></tr>
+          <tr><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td class="event">!</td><td>16</td></tr>
+          <tr><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td></tr>
+          <tr><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td></tr>
+          <tr><td>31</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="calendar-footer">
+      <div class="logros">
+<img src="img/foto.jpg" alt="Logo MindQuest" class="logo">
+        <p>LOGROS</p>
+      </div>
+      <div class="tareas">
+<img src="img/foto.jpg" alt="Logo MindQuest" class="logo">
+        <p>TAREAS</p>
+      </div>
+      <div class="insignias">
+<img src="img/foto.jpg" alt="Logo MindQuest" class="logo">
+        <p>INSIGNIAS</p>
+      </div>
+    </div>
 
-    <!-- Habilidades -->
-    <section id="habilidades" class="container">
-      <h2>Habilidades</h2>
-      <form id="form-habilidad" class="form-dinamico">
-        <input type="text" id="habilidad-input" placeholder="Ej: Java, Inglés B1...">
-        <button type="submit">Agregar</button>
-      </form>
-      <ul id="lista-habilidades" class="lista-dinamica"></ul>
-    </section>
-  </main>
+    <div class="task-list">
+      <div class="task"><span>4 AGOSTO</span> Exposición Construcción Software</div>
+      <div class="task"><span>7 AGOSTO</span> Taller Matemáticas</div>
+      <div class="task"><span>15 AGOSTO</span> Taller Programación</div>
+      <button class="add-task">+ Añadir Tarea</button>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 Kevin Arevalo</p>
-  </footer>
+  <!-- Tareas -->
+  <section id="tasks" class="page">
+    <div class="tabs">
+      <button onclick="showPending()">PENDIENTES</button>
+      <button onclick="showCompleted()">COMPLETADAS</button>
+    </div>
+    <div class="tasks-container" id="tasks-container">
+      <div class="task-card red">4 AGOSTO 2025</div>
+      <div class="task-card red">7 AGOSTO 2025</div>
+      <div class="task-card red">15 AGOSTO 2025</div>
+    </div>
+  </section>
+
+  <!-- Logros -->
+  <section id="achievements" class="page">
+    <h2>LOGROS</h2>
+    <div class="achievement">🏆 10 TAREAS COMPLETADAS</div>
+    <div class="achievement">🏆 100 TAREAS COMPLETADAS</div>
+  </section>
+
+  <!-- Insignias -->
+  <section id="badges" class="page">
+    <h2>INSIGNIAS</h2>
+    <div class="badge">👍 BUEN TRABAJO</div>
+    <div class="badge">🎖 PRIMERA VEZ EN LA PÁGINA</div>
+    <div class="badge">📅 1 SEMANA</div>
+  </section>
 
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
